@@ -13,14 +13,29 @@ function Header({name,year}){
   )
 }
 
+const items = [
+  "Vegetable Momo",
+  "Pasta", "Fried Potatoes", "Tofu and Vegetables"
+];
+
+function Main({dishes}){
+  return (
+    <ul>
+     {dishes.map((dish)=> (
+      <li style={{listStyleType:"none"}}>{dish}</li>
+      ))}
+      
+    </ul>
+  )
+}
+
+
 function App() {
   return (
     <div>
     <Header name="Anil" year = {new Date().getFullYear()}/>
 
-    <main>
-      <h2>We server vegeterian dishes.</h2>
-    </main>
+    <Main dishes ={items}/>
 
     </div>
   );
