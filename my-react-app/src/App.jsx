@@ -2,10 +2,12 @@
 import './App.css'
 
 //create a react component: React components are functions that return UI
-function Header(){
+function Header(props){
+
   return (
     <header>
-      <h1>Anil's Kitchen</h1>
+      <h1>{props.name}'s Kitchen</h1>
+      <p>Copyright {props.year}</p>
     </header>
 
   )
@@ -14,7 +16,7 @@ function Header(){
 function App() {
   return (
     <div>
-    <Header />
+    <Header name="Anil" year = {new Date().getFullYear()}/>
 
     <main>
       <h2>We server vegeterian dishes.</h2>
