@@ -13,7 +13,14 @@ function Header(){
 
 function App() {
   return (
+    <div>
     <Header />
+
+    <main>
+      <h2>We server vegeterian dishes.</h2>
+    </main>
+
+    </div>
   );
 }
 
