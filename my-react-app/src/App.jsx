@@ -1,13 +1,19 @@
 
 import './App.css'
 
-let language = "javascript";
+//create a react component: React components are functions that return UI
+function Header(){
+  return (
+    <header>
+      <h1>Anil's Kitchen</h1>
+    </header>
+
+  )
+}
 
 function App() {
-  
-
   return (
-    <h1>Hello {language.toUpperCase()}!</h1>
+    <Header />
   );
 }
 
